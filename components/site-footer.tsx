@@ -1,0 +1,4 @@
+import Link from "next/link";
+export default function SiteFooter() {
+  return <footer className="site-footer"><div className="wrap footer-top"><div className="footer-brand"><Link className="brand" href="/"><span className="brand-mark">✦</span><span>skycast<span className="brand-period">.</span></span></Link><p>A clearer view of the weather<br />and the world around it.</p></div><div className="footer-links"><div><strong>Explore</strong><Link href="/weather">Weather dashboard</Link><Link href="/blog">Journal & guides</Link><Link href="/about">About SkyCast</Link></div><div><strong>Project notes</strong><span>Built with Next.js</span><span>Weather by Open-Meteo</span><span>Demo / learning project</span></div></div></div><div className="wrap footer-bottom"><span>© {new Date().getFullYear()} SkyCast. Made for curious minds.</span><span>Clear skies, whatever the forecast. ✦</span></div></footer>;
+}
